@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Position Posting</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/form.js"></script>
+	</head>
+
+<body>
+	<div class="container">
+		<h1>Enter Open Position Information</h1>
+
+		<form role="form" method="get" onsubmit="return Check()">
+			<div class="form-group">
+				<label for="title">Position Title</label>
+				<input type="text" class="form-control" id="title">
+				<span id="errorTitle" style="color:red"></span>
+			</div>
+
+			<div class="form-group">
+				<label for="location">Position Location</label>
+				<input type="text" class="form-control" id="location">
+				<span id="errorLocation" style="color:red"></span>
+			</div>
+
+			<div class="form-group">
+				<label for="department">Department</label>
+				<input type="text" class="form-control" id="department">
+				<span id="errorDepartment" style="color:red"></span>
+			</div>
+
+			<div class="form-group">
+				<label for="comments">Comments</label>
+				<textarea class="form-control" rows="2" id"comments"></textarea>
+			</div>
+
+			<button type="button" class="btn btn-default" >Cancel</button>
+			
+			<div class="pull-right">
+				<button type="button" class="btn btn-default">Save &amp; Close</button>
+				<button type="button" class="btn btn-primary" onclick="check();">Next &gt;</button>
+			</div>
+		</form>
+
+	</div>
+</body>
+
+</html>
