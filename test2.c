@@ -14,11 +14,11 @@ int main(){
 	}
 
 	for (int j = 0; j <= 999; j++){
-		if (given[j] % 3 == 0)
+		if ((given[j]%3 == 0) && (given[j]%5 != 0))
 			printf("fizz\n");
-		else if(given[j]%5 == 0)
+		else if ((given[j]%3 != 0) && (given[j]%5 == 0))
 			printf("buzz\n");
-		else if ((given[j]%3 == 0) && (given[j]%5 ==0))
+		else if ((given[j]%3 == 0) && (given[j]%5 == 0))
 			printf("fizzbuzz\n");
 		else
 			printf("%d\n", given[j]);
